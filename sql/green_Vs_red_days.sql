@@ -16,7 +16,7 @@ FROM(
        
         close,
         lag(close) over (order by date) prev
-        from aapl
+        from aapl_data
      )x
 where prev is not null
 )y

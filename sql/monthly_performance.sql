@@ -3,6 +3,6 @@ SELECT YEAR(date) AS year, MONTH(date) AS month,
   MAX(high) AS month_high,
   MIN(low) AS month_low,
   SUM(volume) AS total_volume
-FROM aapl
+FROM aapl_data
 GROUP BY YEAR(date), MONTH(date)
 ORDER BY year, month;

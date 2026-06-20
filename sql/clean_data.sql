@@ -1,4 +1,4 @@
-CREATE TABLE AAPL AS
+CREATE TABLE aapl_data AS
 SELECT
     date,
     MAX(close) AS close,
@@ -6,5 +6,5 @@ SELECT
     MAX(high) AS high,
     MIN(low) AS low,
     SUM(volume) AS volume
-FROM RAW_AAPL
+FROM aapl_raw_data
 GROUP BY date;

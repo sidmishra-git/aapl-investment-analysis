@@ -8,4 +8,4 @@ SELECT
         ELSE 'upwards'
     END AS trend_for_the_day
 FROM
-    aapl
+    aapl_data

@@ -5,6 +5,6 @@ ROUND(
         2
     ) AS daily_return_pct
   
-from aapl
+from aapl_data
 order by daily_return_pct desc
 limit 1

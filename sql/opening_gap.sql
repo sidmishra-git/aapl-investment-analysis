@@ -5,5 +5,5 @@ select date,
             when (lag(close) over (order by date)) > open then 'gap down' 
             else 'gap up' 
             end as opening_gap
-from aapl
+from aapl_data
 

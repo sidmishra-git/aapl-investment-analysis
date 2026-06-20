@@ -1,4 +1,4 @@
 SELECT date, close,
   AVG(close) OVER (ORDER BY date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg_7d,
   AVG(close) OVER (ORDER BY date ROWS BETWEEN 29 PRECEDING AND CURRENT ROW) AS moving_avg_30d
-FROM aapl;
+FROM aapl_data;

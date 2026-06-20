@@ -1,2 +1,2 @@
 select date, high, low
-from aapl
+from aapl_data
